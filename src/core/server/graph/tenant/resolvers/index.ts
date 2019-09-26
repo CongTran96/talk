@@ -27,6 +27,7 @@ import { Invite } from "./Invite";
 import { LiveConfiguration } from "./LiveConfiguration";
 import { ModerationQueue } from "./ModerationQueue";
 import { ModerationQueues } from "./ModerationQueues";
+import { ModeratorNote } from "./ModeratorNote";
 import { Mutation } from "./Mutation";
 import { OIDCAuthIntegration } from "./OIDCAuthIntegration";
 import { Profile } from "./Profile";
@@ -88,6 +89,7 @@ const Resolvers: GQLResolver = {
   User,
   UserStatus,
   UsernameStatus,
+  ModeratorNote,
 };
 
 export default Resolvers;
