@@ -770,9 +770,10 @@ export async function destroyModeratorNote(
   mongo: Db,
   tenant: Tenant,
   userID: string,
-  id: string
+  id: string,
+  createdBy: User
 ) {
-  return deleteModeratorNote(mongo, tenant.id, userID, id);
+  return deleteModeratorNote(mongo, tenant.id, userID, id, createdBy.id);
 }
 
 /**
